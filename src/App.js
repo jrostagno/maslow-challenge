@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./components/Navbar/NavBar";
+import { React, useEffect } from "react";
+import Filters from "./components/Filter/Filters";
+import Chart from "./components/Chart/Chart";
 
 function App() {
+  useEffect(() => {
+    if (!window.localStorage.length) {
+      window.localStorage.setItem("local", "en");
+    }
+  }, []);
+
+  console.log(window.localStorage);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-4 w-full">
+      <NavBar />
+      <div className="lg:flex  mt-7    sm:flex-none    ">
+        <Chart />
+        <Filters />
+      </div>
     </div>
   );
 }

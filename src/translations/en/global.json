@@ -1,0 +1,24 @@
+{
+  "profileInfo": {
+    "company": "Company",
+    "position": "Position"
+  },
+
+  "chart": {
+    "title": "Yours compensations",
+    "subtitle": "A graphical representation of your upcoming benefits."
+  },
+  "filter": {
+    "workHours": "Works hours per week",
+    "compensationsAmount": "Total compensation",
+    "buttonBase": "Base",
+    "buttonPotential": "Potential",
+    "buttonAccept": "Accept Offer"
+  },
+  "progress": {
+    "cash": "Cash",
+    "bonus": "Bonus",
+    "stack": "Stock Options",
+    "maslow": "Maslow Points"
+  }
+}
