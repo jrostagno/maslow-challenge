@@ -11,12 +11,10 @@ function App() {
     }
   }, []);
 
-  console.log(window.localStorage);
-
   return (
-    <div className="p-4 w-full">
+    <div className="w-full p-6">
       <NavBar />
-      <div className="lg:flex  mt-7    sm:flex-none    ">
+      <div className="lg:flex mt-7 sm:flex-none ">
         <Chart />
         <Filters />
       </div>
